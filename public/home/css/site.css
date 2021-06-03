@@ -358,10 +358,7 @@ h5 {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.banner {
-  z-index: 9999;
-  margin: 50px 150px;
-}
+
 .notice {
   color: #801f00;
   background-color: #ffd8cc;
@@ -371,6 +368,10 @@ h5 {
 }
 .notice strong {
   font-weight: 600;
+}
+.notice .title {
+  font-size: 14px;
+  color: #801f00;
 }
 .notice ul {
   list-style: initial;
@@ -382,11 +383,16 @@ h5 {
   list-style-type: square;
   margin-bottom: 10px;
 }
+.notice-link {
+  color: #801f00;
+  text-decoration: underline;
+  font-weight: 600;
+}
 .text {
   width: 350px;
   position: fixed;
   left: 50%;
-  top: 50%;
+  top: 35%;
   margin-top: -150px;
   margin-left: 100px;
   opacity: 0;
@@ -429,7 +435,6 @@ h5 {
 .text.t1 .create-sharelock {
   border-color: #eee;
   color: #5c666f;
-  margin-left: 10px;
 }
 @-webkit-keyframes bounce {
   0%,
