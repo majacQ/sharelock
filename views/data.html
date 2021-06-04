@@ -5,6 +5,29 @@
   <a href="/new" id="new_sharelock" class="btn-floating btn-large waves-effect waves-light"><i class="mdi-content-add"></i></a>
 
   <div class="data card-panel">
+    <div class='notice'>
+      <p class='title'>
+        <strong>Important Notice:</strong> Sharelock.io service is being ended and the site will be shut down <strong>August
+          1st,
+          2021</strong>. After this date Sharelock will no longer be available, and you will not be able to retrieve any
+        shared
+        secrets that are stored
+        only in Sharelock.
+      </p>
+      <ul>
+        <li>
+          If you are creating a new shared secret via Sharelock you should plan to move to other alternatives such as
+          <a class='notice-link' target="_blank" rel="noopener" href="https://1password.com/">1Password</a> and <a
+            target="_blank" rel="noopener" class='notice-link' href="https://www.sendsafely.com/">SendSafely</a>
+          immediately. Creation of Sharelock secrets
+          will no longer be available after <strong>June 9th, 2021</strong>.
+        </li>
+        <li>
+          If you’re retrieving a secret shared with you via Sharelock, you should store this secret in another secure
+          location so you do not lose access to it after <strong>August 1st, 2021</strong>.
+        </li>
+      </ul>
+    </div>
     <h3>YOUR SECRET DATA</h3>
 
     <div class="mobile-con">
@@ -14,10 +37,10 @@
     </div>
     <p class="text secret-data">{{data}}</p>
 
-    <a id="copy" data-clipboard-text="{{data}}" class="action-link action-link-inverted place-top desktop-only" href="javascript:;"><span class="copy_text">Copy to clipboard</span> <span class="circle-ico"><img src="/images/ico_scale.svg" alt=""></span></a>  
+    <a id="copy" data-clipboard-text="{{data}}" class="action-link action-link-inverted place-top desktop-only" href="javascript:;"><span class="copy_text">Copy to clipboard</span> <span class="circle-ico"><img src="/images/ico_scale.svg" alt=""></span></a>
 
-    
-    
+
+
   </div>
 
   <div class="data card-panel card-panel-secondary">
@@ -37,7 +60,7 @@
             <span>Android</span>
           </a>
         </div>
-        
+
         </div>
     </div>
   </div>
