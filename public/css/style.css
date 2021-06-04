@@ -196,6 +196,9 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   right: 60px;
   text-align: right;
 }
+.action-link.place-top.move-down {
+  top: 350px;
+}
 
 .action-link.action-link-inverted {
   color: #999;
