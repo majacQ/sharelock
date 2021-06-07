@@ -148,14 +148,21 @@ app.get('/logout',
         res.redirect(req.query.r || '/');
     });
 
-app.get('/new', function (req, res, next) {
-    res.render('new');
+app.get('/new', function (req, res) {
+    res.setHeader('Sunset', 'August 1st, 2021');
+    res.status(410).render('410')
 });
 
-app.post('/create',
-    bodyParser.json(),
-    bodyParser.urlencoded({ extended: false }),
-    current_create());
+app.post('/create', (req, res) => {
+  res.setHeader('Sunset', 'August 1st, 2021');
+  res.status(410).json({message: "New secrets creation has been disabled. Sharelock.io is being ended and the service will be shut down August 1st, 2021. After this date Sharelock will no longer be available, and you will not be able to retrieve any previously shared secrets."})
+}
+
+    // bodyParser.json(),
+    // bodyParser.urlencoded({ extended: false }),
+    // current_create()
+
+    );
 
 // app.get('/test/500', function(req, res, next) {
 //     if (app.get('env') === 'development') {
