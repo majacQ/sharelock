@@ -393,15 +393,13 @@ h5 {
   width: 350px;
   position: fixed;
   left: 50%;
-  top: 35%;
-  margin-top: -150px;
+  top: 30%;
   margin-left: 100px;
   opacity: 0;
 }
 .text.t1 {
   opacity: 1;
   z-index: 1002;
-  margin-top: -150px;
 }
 .text.t1 span.or {
   font-size: 12px;
