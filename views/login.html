@@ -2,12 +2,21 @@
 
 {% block content %}
 <div id="content" class="card-panel log-in">
+        <div class='notice'>
+          <p class='title'>
+            <strong id='bold'>Important Notice:</strong> New secrets creation has been disabled. Sharelock.io is being ended and the
+            service will be shut down <strong id='bold'>August 1st, 2021</strong>.
+            After this date Sharelock will no longer be available, and you will not be able to retrieve any previously shared
+            secrets.
+          </p>
+        </div>
+
     <p>
     {% if (user) %}
       You are logged in as <strong>{{ provider }}</strong> user <strong>{{ user.displayName }}</strong>{% if (email) %} with e-mail address <strong>{{ email }}</strong>{% endif %}
     {% endif %}
     {% if (allow_twitter || allow_domains.length > 0) %}
-    The creator of this sharelock restricted access to the data to 
+    The creator of this sharelock restricted access to the data to
       {% if (allow_twitter) %}
         <strong>select Twitter users</strong>
         {% if (allow_domains.length > 0) %} and {% endif %}

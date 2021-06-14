@@ -5,6 +5,20 @@
   <a href="/new" id="new_sharelock" class="btn-floating btn-large waves-effect waves-light"><i class="mdi-content-add"></i></a>
 
   <div class="data card-panel">
+    <div class='notice'>
+      <p class='title'>
+        <strong>Important Notice:</strong> New secrets creation has been disabled. Sharelock.io is being ended and the service
+        will be shut down <strong>August 1st, 2021</strong>.
+        After this date Sharelock will no longer be available, and you will not be able to retrieve any previously shared
+        secrets.
+      </p>
+      <ul>
+        <li>
+          If you’re retrieving a secret shared with you via Sharelock, you should store this secret in another secure
+          location so you do not lose access to it after <strong>August 1st, 2021</strong>.
+        </li>
+      </ul>
+    </div>
     <h3>YOUR SECRET DATA</h3>
 
     <div class="mobile-con">
@@ -14,10 +28,10 @@
     </div>
     <p class="text secret-data">{{data}}</p>
 
-    <a id="copy" data-clipboard-text="{{data}}" class="action-link action-link-inverted place-top desktop-only" href="javascript:;"><span class="copy_text">Copy to clipboard</span> <span class="circle-ico"><img src="/images/ico_scale.svg" alt=""></span></a>  
+    <a id="copy" data-clipboard-text="{{data}}" class="action-link action-link-inverted place-top desktop-only move-down" href="javascript:;"><span class="copy_text">Copy to clipboard</span> <span class="circle-ico"><img src="/images/ico_scale.svg" alt=""></span></a>
 
-    
-    
+
+
   </div>
 
   <div class="data card-panel card-panel-secondary">
@@ -37,7 +51,7 @@
             <span>Android</span>
           </a>
         </div>
-        
+
         </div>
     </div>
   </div>
