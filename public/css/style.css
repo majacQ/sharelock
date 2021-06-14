@@ -197,7 +197,7 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   text-align: right;
 }
 .action-link.place-top.move-down {
-  top: 350px;
+  top: 275px;
 }
 
 .action-link.action-link-inverted {
@@ -419,9 +419,13 @@ img {
   border-radius: 4px;
   font-size: 13px;
   margin-bottom: 30px;
+  padding-bottom: 0;
 }
 .notice strong {
   font-weight: 600;
+}
+#bold {
+  color: #801f00;
 }
 .notice .title {
   font-size: 14px;
@@ -437,6 +441,7 @@ img {
   display: list-item;
   list-style-type: square;
   margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 .notice-link {
   color: #801f00;
