@@ -419,9 +419,13 @@ img {
   border-radius: 4px;
   font-size: 13px;
   margin-bottom: 30px;
+  padding-bottom: 0;
 }
 .notice strong {
   font-weight: 600;
+}
+#bold {
+  color: #801f00;
 }
 .notice .title {
   font-size: 14px;
